@@ -1,4 +1,4 @@
-version: '3'
+version: '3.5'
 
 services:
   php:
@@ -34,3 +34,7 @@ services:
       - ./db/sql:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
+
+networks:
+  default:
+    name: feeeed
